@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<link href="icon.png" rel="shortcut icon" type="image/x-icon" />
+		<style>
+			#internetExplorer, #chrome, #autoCorrect, #qualityControl {
+				display: none;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #c3c3c3;
+				font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+				text-align: center;
+			}
+			h1 {
+				padding: 12px;
+			}
+			button {
+				background-color: #00a0e6;
+				font-weight: bold;
+				color: white;
+				border-radius: 3px;
+				cursor: pointer;
+				padding: 6px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 4px;
+				margin-bottom: 4px;
+				width: 120px;
+			}
+			button:hover {
+				background-color: #00b2f8;
+			}
+			button:active {
+				background-color: #00c2ff;
+			}
+			#about {
+				margin-bottom: 12px;
+			}
+			.subMenu {
+				display: none;
+			}
+			span {
+				font-size: 1.2em;
+				display: block;
+				margin-left: 20px;
+			}
+			input {
+				width: 450px;
+				margin: 25px 0 0 25px;
+			}
+			#payor {
+				font-size: 1.3em;
+				padding: 14px;
+			}
+			#payorType {
+				color: #00a0e6;
+				font-size: 1.3em;
+				padding: 14px;
+				font-weight: bold;
+			}
+			#container1 {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			#payorTypeP {
+				padding-top: 10px;
+			}
+		</style>
+		<title>Tag Assist - Payor Types</title>
+	</head>
+	<body>
+		<h1>TagAssist Payor Types Search</h1>
+		<div id="container1">
+			<input type="text" id="payorTypeSearch"></input>
+			<span id="payor">.</span>
+			<span id="payorType">.</span>
+			<button id="okButton">OK</button>
+			<button id="copyButton">Copy</button>
+		<div>
+		<p id="payorTypeP">Just start typing a Payor and you will see its Payor Type and consensus name.</p>
+		<script language='javascript' src='jquery.js'></script>
+		<script language='javascript' src='payortypes.js'></script>
+	</body>
+</html>
